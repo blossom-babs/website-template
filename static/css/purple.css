@@ -1,0 +1,102 @@
+@import url("https://fonts.googleapis.com/css2?family=Lora&family=Ubuntu&display=swap");
+body {
+  background-color: #4b5156;
+  color: #fff;
+}
+
+.themes {
+  margin-top: 5rem;
+  display: flex;
+}
+
+.themes .circles {
+  height: 30px;
+  width: 30px;
+  border-radius: 50%;
+  background-color: #fff;
+  margin: .5rem;
+  border: 2px solid #010101;
+  cursor: pointer;
+}
+
+.themes .circles:hover {
+  border-width: 5px;
+}
+
+.themes #dark-theme {
+  background-color: #010101;
+}
+
+.themes #light-theme {
+  background-color: #fff;
+}
+
+.themes #blue-theme {
+  background-color: #192734;
+}
+
+.themes #purple-theme {
+  background-color: #4b5156;
+}
+
+#message .card {
+  background: #4b5156;
+  border-color: #4b5156;
+}
+
+.nav {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-top: 2rem;
+}
+
+.nav ul {
+  display: flex;
+}
+
+.nav ul li {
+  padding: 0 1rem;
+}
+
+.nav ul li a {
+  color: #fff;
+  text-decoration: none;
+}
+
+.nav ul li a:hover {
+  text-decoration: underline;
+  text-decoration-color: red;
+}
+
+#socials .card {
+  margin-bottom: 2rem;
+  padding: 3rem;
+  background-color: #f1f1f1;
+}
+
+#socials .card a {
+  color: red;
+  text-decoration: none;
+  font-size: 2rem;
+}
+
+#socials .card a .i {
+  padding-right: 3rem;
+}
+
+#socials .card a:hover {
+  color: #fff;
+}
+
+#socials .card .btn {
+  border: #fff;
+  margin-left: -5rem;
+}
+
+#socials .card:hover {
+  background-color: #f1f1f1;
+  outline-color: red;
+  color: red;
+}
+/*# sourceMappingURL=purple.css.map */

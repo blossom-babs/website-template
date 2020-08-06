@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html class="no-js">
+
+<head>
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <title>Blossom</title>
+  <meta name="description" content="" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+    integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+  <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+    integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous">
+  </script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+    integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous">
+  </script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+    integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous">
+  </script>
+  <script src="https://kit.fontawesome.com/b527bec78a.js" crossorigin="anonymous"></script>
+
+  <script defer src="{{url_for('static', filename='script.js')}}"></script>
+  <link rel="stylesheet" href="{{url_for('static', filename='css/styles.css')}}">
+  <link id="theme-style" rel="stylesheet" href="">
+
+</head>
+
+<body>
+  <div class="container container-fluid">
+
+     <!-- Page Preloder -->
+     <div class="d-none" id="preloder">
+       <div class="loader"></div>
+     </div>
+
+     <div class="d-none loader">
+       <div class="lds-grid">
+         <div class="mr-3 w-100 h-100"></div>
+         <div class="mx-3 w-100 h-100"></div>
+       </div>
+     </div>
+
+    <!-- header / hamburger -->
+    <div class="nav">
+      <div><i class="fas fa-arrow-right"></i></div>
+      <div>
+        <ul>
+          <li> <a href="#projects">Portfolio</a> </li>
+          <li><a href="#about">About</a> </li>
+          <li><a href="#message">Contact</a> </li>
+        </ul>
+      </div>
+    </div>
+
+    <!-- INTRODUCTION -->
+
+    <section class="introduction">
+      <div>
+        <h1 class="intro--name">I'm Blosso<span class="span">m.</span></h1>
+        <p class="intro--about">I build pages that gets hosted on the web.</p>
+      </div>
+
+
+      <div class="themes">
+        <div data-attribute="dark" id="dark-theme" class="circles"></div>
+        <div data-attribute="light" id="light-theme" class="circles"></div>
+        <div data-attribute="blue" id="blue-theme" class="circles"></div>
+        <div data-attribute="purple" id="purple-theme" class="circles"></div>
+
+      </div>
+      <div class="em"> <em>* click on the circle to change the theme.</em></div>
+     <div><em>* Refresh your page to save preferred theme.</em>
+      </div>
+
+
+    </section>
+    <!-- projects -->
+
+    <section id="projects" class="projects">
+      <div>
+        <hr>
+        <h1>Featured Projects</h1>
+        <div class="row">
+          <!-- first row -->
+          <div class="col-lg-4">
+            <div class="card">
+              <img src="static/images/insure.png">
+              <h4>Insure</h4>
+              <h6>HTML5 | CSS3</h6>
+              <div class="flex">
+                <div> <a href="" class="btn btn-outline-danger btn-sm"><i class="far fa-eye"></i>Project</a>
+                </div>
+                <div><a href="" class="btn btn-outline-danger btn-sm"><i class="fab fa-github"></i>Github</a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4">
+            <div class="card">
+              <img src="static/images/memory-game.png">
+              <h4>Memory Game</h4>
+              <h6>Javascript</h6>
+              <div class="flex">
+                <div> <a href="" class="btn btn-outline-danger btn-sm"><i class="far fa-eye"></i>Project</a>
+                </div>
+                <div><a href="" class="btn btn-outline-danger btn-sm"><i class="fab fa-github"></i>Github</a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4">
+            <div class="card">
+              <img src="static/images/to-do-list.png">
+              <h4>Task Management App</h4>
+              <h6>Node js | express</h6>
+              <div class="flex">
+                <div> <a href="" class="btn btn-outline-danger btn-sm"><i class="far fa-eye"></i>Project</a>
+                </div>
+                <div><a href="" class="btn btn-outline-danger btn-sm"><i class="fab fa-github"></i>Github</a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- second row -->
+        </div>
+      </div>
+      <a class="see-more btn btn-md btn-outline-danger" href="#"><i class="fas fa-arrow-right"></i>Click to see More</a>
+    </section>
+
+    <!-- about me-->
+
+    <section id="about" class="about">
+      <div>
+        <hr style="width: 10rem; background: red;">
+        <h1 class="about-h1">Hey there !</h1>
+        <p>My name is Blossom. I'm a web developer. I have experience using frontend and backend technologies
+          professionally.
+          I particularly enjoy html, sass, javascript and everything involved in bringing the web page to life. I also
+          write its logic in node js or flask. When I am not coding, I am thinking about societal constructs, aliens and
+          animals
+          (particularly cats and dogs). Occasionally, I write about them too.
+        </p>
+        <button class="btn btn-lg btn-danger"> <a href="{{url_for('static', filename='files/Blossom_Babalola_Resume.pdf')}}">Hire Me</a> </button>
+      </div>
+    </section>
+
+    <!-- My socials -->
+    <section id="socials" class="socials">
+      <div class="row">
+        <div class="col-lg-6">
+          <div class="card">
+            <a href=""><i class="i fab fa-twitter"></i> Twitter</a>
+          </div>
+        </div>
+        <div class="col-lg-6">
+          <div class="card">
+            <a href="#"><i class="i fas fa-spinner"></i> Repl.it</a>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-lg-6">
+          <div class="card">
+            <a href="#"><i class="i fab fa-github"></i> Github</a>
+          </div>
+        </div>
+        <div class="col-lg-6">
+          <div class="card">
+            <a href="#"><i class="i fab fa-github"></i>LinkedIn</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- message me-->
+    <section id="message" class="message">
+      <div class="flex">
+        <div class="message-card-container">
+          <hr>
+          <h1>Contact M<span class="span">e.</span></h1>
+          <div class="card">
+            <form action="/" method="POST">
+              <input type="text" name="name" placeholder="Your Name" required>
+              <input type="email" name="email" placeholder="Your Email" required>
+              <textarea id="" cols="30" rows="5" name="message" placeholder="Leave a Message"></textarea>
+              <button type="submit" class="btn btn-danger btn-md">Send</button>
+            </form>
+          </div>
+        </div>
+
+        <!-- technologies -->
+        <div class="technologies">
+          <hr style="visibility: hidden;">
+          <h1>Technologies<span class="span">.</span></h1>
+          <div class="grid">
+            <div class="html"> <i class="fab fa-html5 fa-3x"></i></div>
+            <div class="css"> <i class="fab fa-css3 fa-3x"></i></div>
+            <div class="js"> <i class="fab fa-js fa-3x"></i></div>
+            <div class="git"><i class="fas fa-code-branch fa-3x"></i></div>
+            <div class="python"><i class="fab fa-python fa-3x"></i></div>
+            <div class="node"> <i class="fab fa-node fa-3x"></i></div>
+            <!-- <div class="node-js"> <i class="fab fa-node-js fa-3x"></i></div> -->
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </div>
+
+
+</body>
+
+</html>
+<!-- 
+<span>Photo by <a href="https://unsplash.com/@donovan_valdivia?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText">Andrew "Donovan" Valdivia</a> on <a href="https://unsplash.com/t/current-events?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText">Unsplash</a></span> -->

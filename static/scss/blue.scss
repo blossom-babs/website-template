@@ -1,0 +1,150 @@
+@import url("https://fonts.googleapis.com/css2?family=Lora&family=Ubuntu&display=swap");
+
+$font: Ubuntu,
+sans-serif;
+$bg-color: linear-gradient(#ff5e62, #ff9966);
+$pink:#ff5e62;
+$black:#010101;
+$white:#fff;
+$grey:#c4c4c4;
+$red:red;
+
+// color:#4b5156 #eaeaea #17a2b8 #24292e
+
+body {
+    background-color: #192734;
+    color: $white;
+}
+
+// themes
+
+.themes {
+    margin-top: 5rem;
+    display: flex;
+
+    .circles {
+        height: 30px;
+        width: 30px;
+        border-radius: 50%;
+        // border: 3px solid $black;
+        background-color: $white;
+        // color: $white;
+        margin: .5rem;
+        border: 2px solid $black;
+        cursor: pointer;
+
+
+        &:hover {
+            border-width: 5px;
+
+        }
+
+    }
+
+
+
+    #dark-theme {
+        background-color: $black;
+
+    }
+
+    #light-theme {
+        background-color: $white;
+
+    }
+
+    #blue-theme {
+        background-color: #192734;
+
+        // green-theme #78866b
+
+    }
+
+    #purple-theme {
+        background-color: #4b5156;
+
+    }
+}
+
+
+// navigation
+
+.nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-top: 2rem;
+
+    ul {
+        display: flex;
+
+
+        li {
+            padding: 0 1rem;
+
+            a {
+                color: $white;
+                text-decoration: none;
+
+                &:hover {
+                    text-decoration: underline;
+                    text-decoration-color: red;
+                }
+            }
+        }
+
+    }
+}
+
+#socials {
+    .card {
+        margin-bottom: 2rem;
+        padding: 3rem;
+        background-color: #f1f1f1;
+        // box-shadow: 12px 12px 2px 1px #f1f1f1;
+
+
+        a {
+            //color: lighten(red, $amount: 10);
+            color: red;
+            text-decoration: none;
+            font-size: 2rem;
+            // text-align: center;
+
+            .i {
+                padding-right: 3rem;
+            }
+
+            &:hover {
+                color: $white;
+            }
+        }
+
+
+
+        .btn {
+            border: $white;
+            margin-left: -5rem;
+        }
+
+        &:hover {
+            //  background-color: $black;
+            background-color: #f1f1f1;
+            outline-color: red;
+            color: red;
+        }
+    }
+
+
+}
+
+
+// message 
+
+#message {
+    .card {
+        background: #192734;
+        border-color: #192734;
+
+    }
+}
